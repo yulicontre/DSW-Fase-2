@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2</title>
+    <style>
+        header{ 
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            background-color: coral;
+            align-items: center;
+            padding: 15px;
+        }
+        section{
+            text-align: center;
+
+        }
+        a{ 
+            text-decoration: none;
+            color: black;
+        }
+        nav a{ 
+            font-weight: 600;
+            padding-right: 15px;
+        }
+        nav a:hover{ 
+           color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="#Inicio" class="nav-link">Inicio</a>
+            <a href="#Box Model" class="nav-link">Box Model</a>
+            <a href="#Mockup" class="nav-link">Mockup</a>
+            <a href="#Acerca de" class="nav-link"> Acerca de </a>
+        </nav>
+    </header>
+
+    <section id="Inicio"> 
+        <h1> Encuentra información aquí </h1>
+        <h3>Conceptos relacionados con los fundamentos de diseño Web</h4>
+
+        <img src="herramientas-diseno-web.png" alt="">
+    </section>
+    <hr>
+<article id="Box Model">
+    <h2>Box Mode o Modelo de Cajas</h2>
+    <p>
+        El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.
+
+
+        Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. La siguiente imagen muestra las tres cajas rectangulares que crean las tres etiquetas HTML que incluye la página:
+    
+    </p>
+
+    <img src="img/figura 4.1.png" alt="Figura 4.1">
+
+    <p>
+        Las cajas de las páginas no son visibles a simple vista porque inicialmente no muestran ningún color de fondo ni ningún borde. La siguiente imagen muestra las cajas que forman la página web de http://www.alistapart.com/ después de forzar a que todas las cajas muestren su borde:
+    </p>
+
+     <img src="img/figura 4.2.png" alt="">
+    
+    <p>
+        Los navegadores crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características. Cada una de las cajas está formada por seis partes, tal y como muestra la siguiente imagen:
+    </p>
+    <img src="img/figura 4.3.png" alt="">
+
+    <p>
+        Las partes que componen cada caja y su orden de visualización desde el punto de vista del usuario son las siguientes:
+    </p>
+    <p>
+        <ul>
+           <li>Contenido (content): se trata del contenido HTML del elemento (las palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.)</li>
+           <li>Relleno (padding): espacio libre opcional existente entre el contenido y el borde.</li>
+           <li>Borde (border): línea que encierra completamente el contenido y su relleno.</li>
+           <li>Imagen de fondo (background image): imagen que se muestra por detrás del contenido y el espacio de relleno.</li>
+           <li>Color de fondo (background color): color que se muestra por detrás del contenido y el espacio de relleno.</li>
+           <li>Margen (margin): separación opcional existente entre la caja y el resto de cajas adyacentes.</li>
+        </ul>
+    <p>
+        El relleno y el margen son transparentes, por lo que en el espacio ocupado por el relleno se muestra el color o imagen de fondo (si están definidos) y en el espacio ocupado por el margen se muestra el color o imagen de fondo de su elemento padre (si están definidos). Si ningún elemento padre tiene definido un color o imagen de fondo, se muestra el color o imagen de fondo de la propia página (si están definidos).
+    </p>
+    Si una caja define tanto un color como una imagen de fondo, la imagen tiene más prioridad y es la que se visualiza. No obstante, si la imagen de fondo no cubre totalmente la caja del elemento o si la imagen tiene zonas transparentes, también se visualiza el color de fondo. Combinando imagenes transparentes y colores de fondo se pueden lograr efectos gráficos muy interesantes
+</article>
+
+<hr>
+<article id="Mockup">
+    <h2> Mockup de la página</h2>
+    <img src="img/Mockup Box Model.png" alt="">
+</article>
+<hr>
+<a name="Acerca de"></a>
+<article id="Acerca de">
+    <h2> Acerca de </h2>
+    <h5> Nombre: Yuby Yulieth Contreras</h5>
+    <h5> Correo: yycontreras@unadvirtual.edu.co</h5>
+    <h5>Sacado de:  uniwebsidad. (s.f.). uniwebsidad. Obtenido de https://uniwebsidad.com/libros/css/capitulo-4</h5>
+    <h5> 2023 UNAD </h5>
+</article>
+
+
+
+
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
